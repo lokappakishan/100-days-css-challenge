@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Courier New", "Courier", sans-serif;
+
+}
+
+body{
+
+    h1{
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .background{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+        
+        .number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .one-top {
+                    position: absolute;
+                    top: 95px;
+                    left: 66px;
+                    height: 40px;
+                    width: 25px;
+                    background-color: white;
+                    border-radius: 7%;
+                    transform: rotate(50deg);
+                }
+            
+                .one {
+                    height: 100px;
+                    width: 25px;
+                    background-color: white;
+                    border-radius: 7%;
+                    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+                    z-index: 6;
+                }
+
+                .zero{
+                    height: 55px;
+                    width: 55px;
+                    border: 25px solid white;
+                    border-radius: 50%;
+                    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+                    transform: translateX(-6%);
+                }
+
+                .zero-first{
+                    z-index: 4;
+                }
+
+                .zero-second {
+                    transform: translateX(-12%);
+                }
+        }
+
+        .big-text {
+            font-size: 5rem;
+            letter-spacing: 0.6rem;
+        }
+
+        .sub-text {
+            font-size: 1.25rem;
+            letter-spacing: 0.4rem;
+        }
+
+
+    }
+}
